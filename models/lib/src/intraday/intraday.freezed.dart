@@ -24,15 +24,15 @@ class _$IntradayTearOff {
       {@JsonKey(name: 'Meta Data')
           required MetaData metaData,
       @JsonKey(name: 'Time Series (1min)')
-          Map<DateTime, TimeSeries>? $timeSeries1m,
+          Map<String, TimeSeries>? $timeSeries1m,
       @JsonKey(name: 'Time Series (5min)')
-          Map<DateTime, TimeSeries>? $timeSeries5m,
+          Map<String, TimeSeries>? $timeSeries5m,
       @JsonKey(name: 'Time Series (15min)')
-          Map<DateTime, TimeSeries>? $timeSeries15m,
+          Map<String, TimeSeries>? $timeSeries15m,
       @JsonKey(name: 'Time Series (30min)')
-          Map<DateTime, TimeSeries>? $timeSeries30m,
+          Map<String, TimeSeries>? $timeSeries30m,
       @JsonKey(name: 'Time Series (60min)')
-          Map<DateTime, TimeSeries>? $timeSeries60m}) {
+          Map<String, TimeSeries>? $timeSeries60m}) {
     return _Intraday(
       metaData: metaData,
       $timeSeries1m: $timeSeries1m,
@@ -56,19 +56,19 @@ mixin _$Intraday {
   @JsonKey(name: 'Meta Data')
   MetaData get metaData => throw _privateConstructorUsedError;
   @JsonKey(name: 'Time Series (1min)')
-  Map<DateTime, TimeSeries>? get $timeSeries1m =>
+  Map<String, TimeSeries>? get $timeSeries1m =>
       throw _privateConstructorUsedError;
   @JsonKey(name: 'Time Series (5min)')
-  Map<DateTime, TimeSeries>? get $timeSeries5m =>
+  Map<String, TimeSeries>? get $timeSeries5m =>
       throw _privateConstructorUsedError;
   @JsonKey(name: 'Time Series (15min)')
-  Map<DateTime, TimeSeries>? get $timeSeries15m =>
+  Map<String, TimeSeries>? get $timeSeries15m =>
       throw _privateConstructorUsedError;
   @JsonKey(name: 'Time Series (30min)')
-  Map<DateTime, TimeSeries>? get $timeSeries30m =>
+  Map<String, TimeSeries>? get $timeSeries30m =>
       throw _privateConstructorUsedError;
   @JsonKey(name: 'Time Series (60min)')
-  Map<DateTime, TimeSeries>? get $timeSeries60m =>
+  Map<String, TimeSeries>? get $timeSeries60m =>
       throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -85,15 +85,15 @@ abstract class $IntradayCopyWith<$Res> {
       {@JsonKey(name: 'Meta Data')
           MetaData metaData,
       @JsonKey(name: 'Time Series (1min)')
-          Map<DateTime, TimeSeries>? $timeSeries1m,
+          Map<String, TimeSeries>? $timeSeries1m,
       @JsonKey(name: 'Time Series (5min)')
-          Map<DateTime, TimeSeries>? $timeSeries5m,
+          Map<String, TimeSeries>? $timeSeries5m,
       @JsonKey(name: 'Time Series (15min)')
-          Map<DateTime, TimeSeries>? $timeSeries15m,
+          Map<String, TimeSeries>? $timeSeries15m,
       @JsonKey(name: 'Time Series (30min)')
-          Map<DateTime, TimeSeries>? $timeSeries30m,
+          Map<String, TimeSeries>? $timeSeries30m,
       @JsonKey(name: 'Time Series (60min)')
-          Map<DateTime, TimeSeries>? $timeSeries60m});
+          Map<String, TimeSeries>? $timeSeries60m});
 
   $MetaDataCopyWith<$Res> get metaData;
 }
@@ -123,23 +123,23 @@ class _$IntradayCopyWithImpl<$Res> implements $IntradayCopyWith<$Res> {
       $timeSeries1m: $timeSeries1m == freezed
           ? _value.$timeSeries1m
           : $timeSeries1m // ignore: cast_nullable_to_non_nullable
-              as Map<DateTime, TimeSeries>?,
+              as Map<String, TimeSeries>?,
       $timeSeries5m: $timeSeries5m == freezed
           ? _value.$timeSeries5m
           : $timeSeries5m // ignore: cast_nullable_to_non_nullable
-              as Map<DateTime, TimeSeries>?,
+              as Map<String, TimeSeries>?,
       $timeSeries15m: $timeSeries15m == freezed
           ? _value.$timeSeries15m
           : $timeSeries15m // ignore: cast_nullable_to_non_nullable
-              as Map<DateTime, TimeSeries>?,
+              as Map<String, TimeSeries>?,
       $timeSeries30m: $timeSeries30m == freezed
           ? _value.$timeSeries30m
           : $timeSeries30m // ignore: cast_nullable_to_non_nullable
-              as Map<DateTime, TimeSeries>?,
+              as Map<String, TimeSeries>?,
       $timeSeries60m: $timeSeries60m == freezed
           ? _value.$timeSeries60m
           : $timeSeries60m // ignore: cast_nullable_to_non_nullable
-              as Map<DateTime, TimeSeries>?,
+              as Map<String, TimeSeries>?,
     ));
   }
 
@@ -160,15 +160,15 @@ abstract class _$IntradayCopyWith<$Res> implements $IntradayCopyWith<$Res> {
       {@JsonKey(name: 'Meta Data')
           MetaData metaData,
       @JsonKey(name: 'Time Series (1min)')
-          Map<DateTime, TimeSeries>? $timeSeries1m,
+          Map<String, TimeSeries>? $timeSeries1m,
       @JsonKey(name: 'Time Series (5min)')
-          Map<DateTime, TimeSeries>? $timeSeries5m,
+          Map<String, TimeSeries>? $timeSeries5m,
       @JsonKey(name: 'Time Series (15min)')
-          Map<DateTime, TimeSeries>? $timeSeries15m,
+          Map<String, TimeSeries>? $timeSeries15m,
       @JsonKey(name: 'Time Series (30min)')
-          Map<DateTime, TimeSeries>? $timeSeries30m,
+          Map<String, TimeSeries>? $timeSeries30m,
       @JsonKey(name: 'Time Series (60min)')
-          Map<DateTime, TimeSeries>? $timeSeries60m});
+          Map<String, TimeSeries>? $timeSeries60m});
 
   @override
   $MetaDataCopyWith<$Res> get metaData;
@@ -200,23 +200,23 @@ class __$IntradayCopyWithImpl<$Res> extends _$IntradayCopyWithImpl<$Res>
       $timeSeries1m: $timeSeries1m == freezed
           ? _value.$timeSeries1m
           : $timeSeries1m // ignore: cast_nullable_to_non_nullable
-              as Map<DateTime, TimeSeries>?,
+              as Map<String, TimeSeries>?,
       $timeSeries5m: $timeSeries5m == freezed
           ? _value.$timeSeries5m
           : $timeSeries5m // ignore: cast_nullable_to_non_nullable
-              as Map<DateTime, TimeSeries>?,
+              as Map<String, TimeSeries>?,
       $timeSeries15m: $timeSeries15m == freezed
           ? _value.$timeSeries15m
           : $timeSeries15m // ignore: cast_nullable_to_non_nullable
-              as Map<DateTime, TimeSeries>?,
+              as Map<String, TimeSeries>?,
       $timeSeries30m: $timeSeries30m == freezed
           ? _value.$timeSeries30m
           : $timeSeries30m // ignore: cast_nullable_to_non_nullable
-              as Map<DateTime, TimeSeries>?,
+              as Map<String, TimeSeries>?,
       $timeSeries60m: $timeSeries60m == freezed
           ? _value.$timeSeries60m
           : $timeSeries60m // ignore: cast_nullable_to_non_nullable
-              as Map<DateTime, TimeSeries>?,
+              as Map<String, TimeSeries>?,
     ));
   }
 }
@@ -241,19 +241,19 @@ class _$_Intraday extends _Intraday {
   final MetaData metaData;
   @override
   @JsonKey(name: 'Time Series (1min)')
-  final Map<DateTime, TimeSeries>? $timeSeries1m;
+  final Map<String, TimeSeries>? $timeSeries1m;
   @override
   @JsonKey(name: 'Time Series (5min)')
-  final Map<DateTime, TimeSeries>? $timeSeries5m;
+  final Map<String, TimeSeries>? $timeSeries5m;
   @override
   @JsonKey(name: 'Time Series (15min)')
-  final Map<DateTime, TimeSeries>? $timeSeries15m;
+  final Map<String, TimeSeries>? $timeSeries15m;
   @override
   @JsonKey(name: 'Time Series (30min)')
-  final Map<DateTime, TimeSeries>? $timeSeries30m;
+  final Map<String, TimeSeries>? $timeSeries30m;
   @override
   @JsonKey(name: 'Time Series (60min)')
-  final Map<DateTime, TimeSeries>? $timeSeries60m;
+  final Map<String, TimeSeries>? $timeSeries60m;
 
   @override
   bool operator ==(dynamic other) {
@@ -305,15 +305,15 @@ abstract class _Intraday extends Intraday {
       {@JsonKey(name: 'Meta Data')
           required MetaData metaData,
       @JsonKey(name: 'Time Series (1min)')
-          Map<DateTime, TimeSeries>? $timeSeries1m,
+          Map<String, TimeSeries>? $timeSeries1m,
       @JsonKey(name: 'Time Series (5min)')
-          Map<DateTime, TimeSeries>? $timeSeries5m,
+          Map<String, TimeSeries>? $timeSeries5m,
       @JsonKey(name: 'Time Series (15min)')
-          Map<DateTime, TimeSeries>? $timeSeries15m,
+          Map<String, TimeSeries>? $timeSeries15m,
       @JsonKey(name: 'Time Series (30min)')
-          Map<DateTime, TimeSeries>? $timeSeries30m,
+          Map<String, TimeSeries>? $timeSeries30m,
       @JsonKey(name: 'Time Series (60min)')
-          Map<DateTime, TimeSeries>? $timeSeries60m}) = _$_Intraday;
+          Map<String, TimeSeries>? $timeSeries60m}) = _$_Intraday;
   const _Intraday._() : super._();
 
   factory _Intraday.fromJson(Map<String, dynamic> json) = _$_Intraday.fromJson;
@@ -323,23 +323,23 @@ abstract class _Intraday extends Intraday {
   MetaData get metaData => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'Time Series (1min)')
-  Map<DateTime, TimeSeries>? get $timeSeries1m =>
+  Map<String, TimeSeries>? get $timeSeries1m =>
       throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'Time Series (5min)')
-  Map<DateTime, TimeSeries>? get $timeSeries5m =>
+  Map<String, TimeSeries>? get $timeSeries5m =>
       throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'Time Series (15min)')
-  Map<DateTime, TimeSeries>? get $timeSeries15m =>
+  Map<String, TimeSeries>? get $timeSeries15m =>
       throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'Time Series (30min)')
-  Map<DateTime, TimeSeries>? get $timeSeries30m =>
+  Map<String, TimeSeries>? get $timeSeries30m =>
       throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'Time Series (60min)')
-  Map<DateTime, TimeSeries>? get $timeSeries60m =>
+  Map<String, TimeSeries>? get $timeSeries60m =>
       throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
@@ -356,18 +356,24 @@ class _$MetaDataTearOff {
   const _$MetaDataTearOff();
 
   _MetaData call(
-      {@JsonKey(name: '1. Information') required String information,
-      @JsonKey(name: '2. Symbol') required String symbol,
-      @JsonKey(name: '3. Last Refreshed') required DateTime lastRefreshed,
-      @JsonKey(name: '4. Interval') required String interval,
-      @JsonKey(name: '5. Output Size') required String outputSize,
-      @JsonKey(name: '6. Time Zone') required String timeZone}) {
+      {@JsonKey(name: '1. Information')
+          required String information,
+      @JsonKey(name: '2. Symbol')
+          required String symbol,
+      @JsonKey(name: '3. Last Refreshed')
+          required String lastRefreshed,
+      @JsonKey(name: '4. Interval')
+          required String interval,
+      @JsonKey(name: '5. Output Size', fromJson: parseOutputSize)
+          required bool compact,
+      @JsonKey(name: '6. Time Zone')
+          required String timeZone}) {
     return _MetaData(
       information: information,
       symbol: symbol,
       lastRefreshed: lastRefreshed,
       interval: interval,
-      outputSize: outputSize,
+      compact: compact,
       timeZone: timeZone,
     );
   }
@@ -387,11 +393,11 @@ mixin _$MetaData {
   @JsonKey(name: '2. Symbol')
   String get symbol => throw _privateConstructorUsedError;
   @JsonKey(name: '3. Last Refreshed')
-  DateTime get lastRefreshed => throw _privateConstructorUsedError;
+  String get lastRefreshed => throw _privateConstructorUsedError;
   @JsonKey(name: '4. Interval')
   String get interval => throw _privateConstructorUsedError;
-  @JsonKey(name: '5. Output Size')
-  String get outputSize => throw _privateConstructorUsedError;
+  @JsonKey(name: '5. Output Size', fromJson: parseOutputSize)
+  bool get compact => throw _privateConstructorUsedError;
   @JsonKey(name: '6. Time Zone')
   String get timeZone => throw _privateConstructorUsedError;
 
@@ -408,9 +414,9 @@ abstract class $MetaDataCopyWith<$Res> {
   $Res call(
       {@JsonKey(name: '1. Information') String information,
       @JsonKey(name: '2. Symbol') String symbol,
-      @JsonKey(name: '3. Last Refreshed') DateTime lastRefreshed,
+      @JsonKey(name: '3. Last Refreshed') String lastRefreshed,
       @JsonKey(name: '4. Interval') String interval,
-      @JsonKey(name: '5. Output Size') String outputSize,
+      @JsonKey(name: '5. Output Size', fromJson: parseOutputSize) bool compact,
       @JsonKey(name: '6. Time Zone') String timeZone});
 }
 
@@ -428,7 +434,7 @@ class _$MetaDataCopyWithImpl<$Res> implements $MetaDataCopyWith<$Res> {
     Object? symbol = freezed,
     Object? lastRefreshed = freezed,
     Object? interval = freezed,
-    Object? outputSize = freezed,
+    Object? compact = freezed,
     Object? timeZone = freezed,
   }) {
     return _then(_value.copyWith(
@@ -443,15 +449,15 @@ class _$MetaDataCopyWithImpl<$Res> implements $MetaDataCopyWith<$Res> {
       lastRefreshed: lastRefreshed == freezed
           ? _value.lastRefreshed
           : lastRefreshed // ignore: cast_nullable_to_non_nullable
-              as DateTime,
+              as String,
       interval: interval == freezed
           ? _value.interval
           : interval // ignore: cast_nullable_to_non_nullable
               as String,
-      outputSize: outputSize == freezed
-          ? _value.outputSize
-          : outputSize // ignore: cast_nullable_to_non_nullable
-              as String,
+      compact: compact == freezed
+          ? _value.compact
+          : compact // ignore: cast_nullable_to_non_nullable
+              as bool,
       timeZone: timeZone == freezed
           ? _value.timeZone
           : timeZone // ignore: cast_nullable_to_non_nullable
@@ -468,9 +474,9 @@ abstract class _$MetaDataCopyWith<$Res> implements $MetaDataCopyWith<$Res> {
   $Res call(
       {@JsonKey(name: '1. Information') String information,
       @JsonKey(name: '2. Symbol') String symbol,
-      @JsonKey(name: '3. Last Refreshed') DateTime lastRefreshed,
+      @JsonKey(name: '3. Last Refreshed') String lastRefreshed,
       @JsonKey(name: '4. Interval') String interval,
-      @JsonKey(name: '5. Output Size') String outputSize,
+      @JsonKey(name: '5. Output Size', fromJson: parseOutputSize) bool compact,
       @JsonKey(name: '6. Time Zone') String timeZone});
 }
 
@@ -489,7 +495,7 @@ class __$MetaDataCopyWithImpl<$Res> extends _$MetaDataCopyWithImpl<$Res>
     Object? symbol = freezed,
     Object? lastRefreshed = freezed,
     Object? interval = freezed,
-    Object? outputSize = freezed,
+    Object? compact = freezed,
     Object? timeZone = freezed,
   }) {
     return _then(_MetaData(
@@ -504,15 +510,15 @@ class __$MetaDataCopyWithImpl<$Res> extends _$MetaDataCopyWithImpl<$Res>
       lastRefreshed: lastRefreshed == freezed
           ? _value.lastRefreshed
           : lastRefreshed // ignore: cast_nullable_to_non_nullable
-              as DateTime,
+              as String,
       interval: interval == freezed
           ? _value.interval
           : interval // ignore: cast_nullable_to_non_nullable
               as String,
-      outputSize: outputSize == freezed
-          ? _value.outputSize
-          : outputSize // ignore: cast_nullable_to_non_nullable
-              as String,
+      compact: compact == freezed
+          ? _value.compact
+          : compact // ignore: cast_nullable_to_non_nullable
+              as bool,
       timeZone: timeZone == freezed
           ? _value.timeZone
           : timeZone // ignore: cast_nullable_to_non_nullable
@@ -523,14 +529,21 @@ class __$MetaDataCopyWithImpl<$Res> extends _$MetaDataCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_MetaData implements _MetaData {
+class _$_MetaData extends _MetaData {
   const _$_MetaData(
-      {@JsonKey(name: '1. Information') required this.information,
-      @JsonKey(name: '2. Symbol') required this.symbol,
-      @JsonKey(name: '3. Last Refreshed') required this.lastRefreshed,
-      @JsonKey(name: '4. Interval') required this.interval,
-      @JsonKey(name: '5. Output Size') required this.outputSize,
-      @JsonKey(name: '6. Time Zone') required this.timeZone});
+      {@JsonKey(name: '1. Information')
+          required this.information,
+      @JsonKey(name: '2. Symbol')
+          required this.symbol,
+      @JsonKey(name: '3. Last Refreshed')
+          required this.lastRefreshed,
+      @JsonKey(name: '4. Interval')
+          required this.interval,
+      @JsonKey(name: '5. Output Size', fromJson: parseOutputSize)
+          required this.compact,
+      @JsonKey(name: '6. Time Zone')
+          required this.timeZone})
+      : super._();
 
   factory _$_MetaData.fromJson(Map<String, dynamic> json) =>
       _$_$_MetaDataFromJson(json);
@@ -543,20 +556,20 @@ class _$_MetaData implements _MetaData {
   final String symbol;
   @override
   @JsonKey(name: '3. Last Refreshed')
-  final DateTime lastRefreshed;
+  final String lastRefreshed;
   @override
   @JsonKey(name: '4. Interval')
   final String interval;
   @override
-  @JsonKey(name: '5. Output Size')
-  final String outputSize;
+  @JsonKey(name: '5. Output Size', fromJson: parseOutputSize)
+  final bool compact;
   @override
   @JsonKey(name: '6. Time Zone')
   final String timeZone;
 
   @override
   String toString() {
-    return 'MetaData(information: $information, symbol: $symbol, lastRefreshed: $lastRefreshed, interval: $interval, outputSize: $outputSize, timeZone: $timeZone)';
+    return 'MetaData(information: $information, symbol: $symbol, lastRefreshed: $lastRefreshed, interval: $interval, compact: $compact, timeZone: $timeZone)';
   }
 
   @override
@@ -574,9 +587,9 @@ class _$_MetaData implements _MetaData {
             (identical(other.interval, interval) ||
                 const DeepCollectionEquality()
                     .equals(other.interval, interval)) &&
-            (identical(other.outputSize, outputSize) ||
+            (identical(other.compact, compact) ||
                 const DeepCollectionEquality()
-                    .equals(other.outputSize, outputSize)) &&
+                    .equals(other.compact, compact)) &&
             (identical(other.timeZone, timeZone) ||
                 const DeepCollectionEquality()
                     .equals(other.timeZone, timeZone)));
@@ -589,7 +602,7 @@ class _$_MetaData implements _MetaData {
       const DeepCollectionEquality().hash(symbol) ^
       const DeepCollectionEquality().hash(lastRefreshed) ^
       const DeepCollectionEquality().hash(interval) ^
-      const DeepCollectionEquality().hash(outputSize) ^
+      const DeepCollectionEquality().hash(compact) ^
       const DeepCollectionEquality().hash(timeZone);
 
   @JsonKey(ignore: true)
@@ -603,14 +616,21 @@ class _$_MetaData implements _MetaData {
   }
 }
 
-abstract class _MetaData implements MetaData {
+abstract class _MetaData extends MetaData {
   const factory _MetaData(
-      {@JsonKey(name: '1. Information') required String information,
-      @JsonKey(name: '2. Symbol') required String symbol,
-      @JsonKey(name: '3. Last Refreshed') required DateTime lastRefreshed,
-      @JsonKey(name: '4. Interval') required String interval,
-      @JsonKey(name: '5. Output Size') required String outputSize,
-      @JsonKey(name: '6. Time Zone') required String timeZone}) = _$_MetaData;
+      {@JsonKey(name: '1. Information')
+          required String information,
+      @JsonKey(name: '2. Symbol')
+          required String symbol,
+      @JsonKey(name: '3. Last Refreshed')
+          required String lastRefreshed,
+      @JsonKey(name: '4. Interval')
+          required String interval,
+      @JsonKey(name: '5. Output Size', fromJson: parseOutputSize)
+          required bool compact,
+      @JsonKey(name: '6. Time Zone')
+          required String timeZone}) = _$_MetaData;
+  const _MetaData._() : super._();
 
   factory _MetaData.fromJson(Map<String, dynamic> json) = _$_MetaData.fromJson;
 
@@ -622,13 +642,13 @@ abstract class _MetaData implements MetaData {
   String get symbol => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: '3. Last Refreshed')
-  DateTime get lastRefreshed => throw _privateConstructorUsedError;
+  String get lastRefreshed => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: '4. Interval')
   String get interval => throw _privateConstructorUsedError;
   @override
-  @JsonKey(name: '5. Output Size')
-  String get outputSize => throw _privateConstructorUsedError;
+  @JsonKey(name: '5. Output Size', fromJson: parseOutputSize)
+  bool get compact => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: '6. Time Zone')
   String get timeZone => throw _privateConstructorUsedError;
@@ -647,17 +667,17 @@ class _$TimeSeriesTearOff {
   const _$TimeSeriesTearOff();
 
   _TimeSeries call(
-      {@JsonKey(name: '1. open') required String $open,
-      @JsonKey(name: '2. high') required String $high,
-      @JsonKey(name: '3. low') required String $low,
-      @JsonKey(name: '4. close') required String $close,
-      @JsonKey(name: '5. volume') required String $volume}) {
+      {@JsonKey(name: '1. open', fromJson: parseDouble) required double open,
+      @JsonKey(name: '2. high', fromJson: parseDouble) required double high,
+      @JsonKey(name: '3. low', fromJson: parseDouble) required double low,
+      @JsonKey(name: '4. close', fromJson: parseDouble) required double close,
+      @JsonKey(name: '5. volume', fromJson: parseInt) required int volume}) {
     return _TimeSeries(
-      $open: $open,
-      $high: $high,
-      $low: $low,
-      $close: $close,
-      $volume: $volume,
+      open: open,
+      high: high,
+      low: low,
+      close: close,
+      volume: volume,
     );
   }
 
@@ -671,16 +691,16 @@ const $TimeSeries = _$TimeSeriesTearOff();
 
 /// @nodoc
 mixin _$TimeSeries {
-  @JsonKey(name: '1. open')
-  String get $open => throw _privateConstructorUsedError;
-  @JsonKey(name: '2. high')
-  String get $high => throw _privateConstructorUsedError;
-  @JsonKey(name: '3. low')
-  String get $low => throw _privateConstructorUsedError;
-  @JsonKey(name: '4. close')
-  String get $close => throw _privateConstructorUsedError;
-  @JsonKey(name: '5. volume')
-  String get $volume => throw _privateConstructorUsedError;
+  @JsonKey(name: '1. open', fromJson: parseDouble)
+  double get open => throw _privateConstructorUsedError;
+  @JsonKey(name: '2. high', fromJson: parseDouble)
+  double get high => throw _privateConstructorUsedError;
+  @JsonKey(name: '3. low', fromJson: parseDouble)
+  double get low => throw _privateConstructorUsedError;
+  @JsonKey(name: '4. close', fromJson: parseDouble)
+  double get close => throw _privateConstructorUsedError;
+  @JsonKey(name: '5. volume', fromJson: parseInt)
+  int get volume => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -694,11 +714,11 @@ abstract class $TimeSeriesCopyWith<$Res> {
           TimeSeries value, $Res Function(TimeSeries) then) =
       _$TimeSeriesCopyWithImpl<$Res>;
   $Res call(
-      {@JsonKey(name: '1. open') String $open,
-      @JsonKey(name: '2. high') String $high,
-      @JsonKey(name: '3. low') String $low,
-      @JsonKey(name: '4. close') String $close,
-      @JsonKey(name: '5. volume') String $volume});
+      {@JsonKey(name: '1. open', fromJson: parseDouble) double open,
+      @JsonKey(name: '2. high', fromJson: parseDouble) double high,
+      @JsonKey(name: '3. low', fromJson: parseDouble) double low,
+      @JsonKey(name: '4. close', fromJson: parseDouble) double close,
+      @JsonKey(name: '5. volume', fromJson: parseInt) int volume});
 }
 
 /// @nodoc
@@ -711,33 +731,33 @@ class _$TimeSeriesCopyWithImpl<$Res> implements $TimeSeriesCopyWith<$Res> {
 
   @override
   $Res call({
-    Object? $open = freezed,
-    Object? $high = freezed,
-    Object? $low = freezed,
-    Object? $close = freezed,
-    Object? $volume = freezed,
+    Object? open = freezed,
+    Object? high = freezed,
+    Object? low = freezed,
+    Object? close = freezed,
+    Object? volume = freezed,
   }) {
     return _then(_value.copyWith(
-      $open: $open == freezed
-          ? _value.$open
-          : $open // ignore: cast_nullable_to_non_nullable
-              as String,
-      $high: $high == freezed
-          ? _value.$high
-          : $high // ignore: cast_nullable_to_non_nullable
-              as String,
-      $low: $low == freezed
-          ? _value.$low
-          : $low // ignore: cast_nullable_to_non_nullable
-              as String,
-      $close: $close == freezed
-          ? _value.$close
-          : $close // ignore: cast_nullable_to_non_nullable
-              as String,
-      $volume: $volume == freezed
-          ? _value.$volume
-          : $volume // ignore: cast_nullable_to_non_nullable
-              as String,
+      open: open == freezed
+          ? _value.open
+          : open // ignore: cast_nullable_to_non_nullable
+              as double,
+      high: high == freezed
+          ? _value.high
+          : high // ignore: cast_nullable_to_non_nullable
+              as double,
+      low: low == freezed
+          ? _value.low
+          : low // ignore: cast_nullable_to_non_nullable
+              as double,
+      close: close == freezed
+          ? _value.close
+          : close // ignore: cast_nullable_to_non_nullable
+              as double,
+      volume: volume == freezed
+          ? _value.volume
+          : volume // ignore: cast_nullable_to_non_nullable
+              as int,
     ));
   }
 }
@@ -749,11 +769,11 @@ abstract class _$TimeSeriesCopyWith<$Res> implements $TimeSeriesCopyWith<$Res> {
       __$TimeSeriesCopyWithImpl<$Res>;
   @override
   $Res call(
-      {@JsonKey(name: '1. open') String $open,
-      @JsonKey(name: '2. high') String $high,
-      @JsonKey(name: '3. low') String $low,
-      @JsonKey(name: '4. close') String $close,
-      @JsonKey(name: '5. volume') String $volume});
+      {@JsonKey(name: '1. open', fromJson: parseDouble) double open,
+      @JsonKey(name: '2. high', fromJson: parseDouble) double high,
+      @JsonKey(name: '3. low', fromJson: parseDouble) double low,
+      @JsonKey(name: '4. close', fromJson: parseDouble) double close,
+      @JsonKey(name: '5. volume', fromJson: parseInt) int volume});
 }
 
 /// @nodoc
@@ -768,33 +788,33 @@ class __$TimeSeriesCopyWithImpl<$Res> extends _$TimeSeriesCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object? $open = freezed,
-    Object? $high = freezed,
-    Object? $low = freezed,
-    Object? $close = freezed,
-    Object? $volume = freezed,
+    Object? open = freezed,
+    Object? high = freezed,
+    Object? low = freezed,
+    Object? close = freezed,
+    Object? volume = freezed,
   }) {
     return _then(_TimeSeries(
-      $open: $open == freezed
-          ? _value.$open
-          : $open // ignore: cast_nullable_to_non_nullable
-              as String,
-      $high: $high == freezed
-          ? _value.$high
-          : $high // ignore: cast_nullable_to_non_nullable
-              as String,
-      $low: $low == freezed
-          ? _value.$low
-          : $low // ignore: cast_nullable_to_non_nullable
-              as String,
-      $close: $close == freezed
-          ? _value.$close
-          : $close // ignore: cast_nullable_to_non_nullable
-              as String,
-      $volume: $volume == freezed
-          ? _value.$volume
-          : $volume // ignore: cast_nullable_to_non_nullable
-              as String,
+      open: open == freezed
+          ? _value.open
+          : open // ignore: cast_nullable_to_non_nullable
+              as double,
+      high: high == freezed
+          ? _value.high
+          : high // ignore: cast_nullable_to_non_nullable
+              as double,
+      low: low == freezed
+          ? _value.low
+          : low // ignore: cast_nullable_to_non_nullable
+              as double,
+      close: close == freezed
+          ? _value.close
+          : close // ignore: cast_nullable_to_non_nullable
+              as double,
+      volume: volume == freezed
+          ? _value.volume
+          : volume // ignore: cast_nullable_to_non_nullable
+              as int,
     ));
   }
 }
@@ -803,56 +823,61 @@ class __$TimeSeriesCopyWithImpl<$Res> extends _$TimeSeriesCopyWithImpl<$Res>
 @JsonSerializable()
 class _$_TimeSeries extends _TimeSeries {
   const _$_TimeSeries(
-      {@JsonKey(name: '1. open') required this.$open,
-      @JsonKey(name: '2. high') required this.$high,
-      @JsonKey(name: '3. low') required this.$low,
-      @JsonKey(name: '4. close') required this.$close,
-      @JsonKey(name: '5. volume') required this.$volume})
+      {@JsonKey(name: '1. open', fromJson: parseDouble) required this.open,
+      @JsonKey(name: '2. high', fromJson: parseDouble) required this.high,
+      @JsonKey(name: '3. low', fromJson: parseDouble) required this.low,
+      @JsonKey(name: '4. close', fromJson: parseDouble) required this.close,
+      @JsonKey(name: '5. volume', fromJson: parseInt) required this.volume})
       : super._();
 
   factory _$_TimeSeries.fromJson(Map<String, dynamic> json) =>
       _$_$_TimeSeriesFromJson(json);
 
   @override
-  @JsonKey(name: '1. open')
-  final String $open;
+  @JsonKey(name: '1. open', fromJson: parseDouble)
+  final double open;
   @override
-  @JsonKey(name: '2. high')
-  final String $high;
+  @JsonKey(name: '2. high', fromJson: parseDouble)
+  final double high;
   @override
-  @JsonKey(name: '3. low')
-  final String $low;
+  @JsonKey(name: '3. low', fromJson: parseDouble)
+  final double low;
   @override
-  @JsonKey(name: '4. close')
-  final String $close;
+  @JsonKey(name: '4. close', fromJson: parseDouble)
+  final double close;
   @override
-  @JsonKey(name: '5. volume')
-  final String $volume;
+  @JsonKey(name: '5. volume', fromJson: parseInt)
+  final int volume;
+
+  @override
+  String toString() {
+    return 'TimeSeries(open: $open, high: $high, low: $low, close: $close, volume: $volume)';
+  }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _TimeSeries &&
-            (identical(other.$open, $open) ||
-                const DeepCollectionEquality().equals(other.$open, $open)) &&
-            (identical(other.$high, $high) ||
-                const DeepCollectionEquality().equals(other.$high, $high)) &&
-            (identical(other.$low, $low) ||
-                const DeepCollectionEquality().equals(other.$low, $low)) &&
-            (identical(other.$close, $close) ||
-                const DeepCollectionEquality().equals(other.$close, $close)) &&
-            (identical(other.$volume, $volume) ||
-                const DeepCollectionEquality().equals(other.$volume, $volume)));
+            (identical(other.open, open) ||
+                const DeepCollectionEquality().equals(other.open, open)) &&
+            (identical(other.high, high) ||
+                const DeepCollectionEquality().equals(other.high, high)) &&
+            (identical(other.low, low) ||
+                const DeepCollectionEquality().equals(other.low, low)) &&
+            (identical(other.close, close) ||
+                const DeepCollectionEquality().equals(other.close, close)) &&
+            (identical(other.volume, volume) ||
+                const DeepCollectionEquality().equals(other.volume, volume)));
   }
 
   @override
   int get hashCode =>
       runtimeType.hashCode ^
-      const DeepCollectionEquality().hash($open) ^
-      const DeepCollectionEquality().hash($high) ^
-      const DeepCollectionEquality().hash($low) ^
-      const DeepCollectionEquality().hash($close) ^
-      const DeepCollectionEquality().hash($volume);
+      const DeepCollectionEquality().hash(open) ^
+      const DeepCollectionEquality().hash(high) ^
+      const DeepCollectionEquality().hash(low) ^
+      const DeepCollectionEquality().hash(close) ^
+      const DeepCollectionEquality().hash(volume);
 
   @JsonKey(ignore: true)
   @override
@@ -867,31 +892,36 @@ class _$_TimeSeries extends _TimeSeries {
 
 abstract class _TimeSeries extends TimeSeries {
   const factory _TimeSeries(
-      {@JsonKey(name: '1. open') required String $open,
-      @JsonKey(name: '2. high') required String $high,
-      @JsonKey(name: '3. low') required String $low,
-      @JsonKey(name: '4. close') required String $close,
-      @JsonKey(name: '5. volume') required String $volume}) = _$_TimeSeries;
+      {@JsonKey(name: '1. open', fromJson: parseDouble)
+          required double open,
+      @JsonKey(name: '2. high', fromJson: parseDouble)
+          required double high,
+      @JsonKey(name: '3. low', fromJson: parseDouble)
+          required double low,
+      @JsonKey(name: '4. close', fromJson: parseDouble)
+          required double close,
+      @JsonKey(name: '5. volume', fromJson: parseInt)
+          required int volume}) = _$_TimeSeries;
   const _TimeSeries._() : super._();
 
   factory _TimeSeries.fromJson(Map<String, dynamic> json) =
       _$_TimeSeries.fromJson;
 
   @override
-  @JsonKey(name: '1. open')
-  String get $open => throw _privateConstructorUsedError;
+  @JsonKey(name: '1. open', fromJson: parseDouble)
+  double get open => throw _privateConstructorUsedError;
   @override
-  @JsonKey(name: '2. high')
-  String get $high => throw _privateConstructorUsedError;
+  @JsonKey(name: '2. high', fromJson: parseDouble)
+  double get high => throw _privateConstructorUsedError;
   @override
-  @JsonKey(name: '3. low')
-  String get $low => throw _privateConstructorUsedError;
+  @JsonKey(name: '3. low', fromJson: parseDouble)
+  double get low => throw _privateConstructorUsedError;
   @override
-  @JsonKey(name: '4. close')
-  String get $close => throw _privateConstructorUsedError;
+  @JsonKey(name: '4. close', fromJson: parseDouble)
+  double get close => throw _privateConstructorUsedError;
   @override
-  @JsonKey(name: '5. volume')
-  String get $volume => throw _privateConstructorUsedError;
+  @JsonKey(name: '5. volume', fromJson: parseInt)
+  int get volume => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$TimeSeriesCopyWith<_TimeSeries> get copyWith =>

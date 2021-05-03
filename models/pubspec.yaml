@@ -12,6 +12,7 @@ dependencies:
   flutter:
     sdk: flutter
   freezed_annotation: ^0.14.1
+  intl: ^0.17.0
   json_annotation: ^4.0.1
 
 dev_dependencies:
