@@ -14,8 +14,7 @@ void main() {
 
       expect(intraday.metaData.compact, true);
       expect(intraday.metaData.symbol, 'IBM');
-      expect(intraday.metaData.lastRefreshed,
-          '2021-04-30 20:00:00');
+      expect(intraday.metaData.lastRefreshed, '2021-04-30 20:00:00');
       expect(intraday.metaData.interval, '1min');
       expect(intraday.metaData.timeZone, 'US/Eastern');
 
@@ -33,14 +32,13 @@ void main() {
 
     test('intraday 5m', () async {
       final String jsonStr =
-      File('test_resources/intraday-5m.json').readAsStringSync();
+          File('test_resources/intraday-5m.json').readAsStringSync();
 
       final Intraday intraday = Intraday.fromJson(jsonAsMap(jsonStr));
 
       expect(intraday.metaData.compact, true);
       expect(intraday.metaData.symbol, 'IBM');
-      expect(intraday.metaData.lastRefreshed,
-          '2021-04-30 20:00:00');
+      expect(intraday.metaData.lastRefreshed, '2021-04-30 20:00:00');
       expect(intraday.metaData.interval, '5min');
       expect(intraday.metaData.timeZone, 'US/Eastern');
 
@@ -58,14 +56,13 @@ void main() {
 
     test('intraday 15m', () async {
       final String jsonStr =
-      File('test_resources/intraday-15m.json').readAsStringSync();
+          File('test_resources/intraday-15m.json').readAsStringSync();
 
       final Intraday intraday = Intraday.fromJson(jsonAsMap(jsonStr));
 
       expect(intraday.metaData.compact, false);
       expect(intraday.metaData.symbol, 'IBM');
-      expect(intraday.metaData.lastRefreshed,
-          '2021-04-30 20:00:00');
+      expect(intraday.metaData.lastRefreshed, '2021-04-30 20:00:00');
       expect(intraday.metaData.interval, '15min');
       expect(intraday.metaData.timeZone, 'US/Eastern');
 
@@ -83,14 +80,13 @@ void main() {
 
     test('intraday 30m', () async {
       final String jsonStr =
-      File('test_resources/intraday-30m.json').readAsStringSync();
+          File('test_resources/intraday-30m.json').readAsStringSync();
 
       final Intraday intraday = Intraday.fromJson(jsonAsMap(jsonStr));
 
       expect(intraday.metaData.compact, false);
       expect(intraday.metaData.symbol, 'IBM');
-      expect(intraday.metaData.lastRefreshed,
-          '2021-04-30 20:00:00');
+      expect(intraday.metaData.lastRefreshed, '2021-04-30 20:00:00');
       expect(intraday.metaData.interval, '30min');
       expect(intraday.metaData.timeZone, 'US/Eastern');
 
@@ -108,14 +104,13 @@ void main() {
 
     test('intraday 60m', () async {
       final String jsonStr =
-      File('test_resources/intraday-60m.json').readAsStringSync();
+          File('test_resources/intraday-60m.json').readAsStringSync();
 
       final Intraday intraday = Intraday.fromJson(jsonAsMap(jsonStr));
 
       expect(intraday.metaData.compact, false);
       expect(intraday.metaData.symbol, 'IBM');
-      expect(intraday.metaData.lastRefreshed,
-          '2021-04-30 20:00:00');
+      expect(intraday.metaData.lastRefreshed, '2021-04-30 20:00:00');
       expect(intraday.metaData.interval, '60min');
       expect(intraday.metaData.timeZone, 'US/Eastern');
 
