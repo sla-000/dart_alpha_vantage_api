@@ -1,12 +1,19 @@
+import 'dart:convert';
+import 'dart:io';
+
 import 'package:flutter_test/flutter_test.dart';
 
 import 'package:models/models.dart';
+import 'package:models/src/utils/json_as_map.dart';
 
 void main() {
-  test('adds one to input values', () {
-    final calculator = Calculator();
-    expect(calculator.addOne(2), 3);
-    expect(calculator.addOne(-7), -6);
-    expect(calculator.addOne(0), 1);
+  group('intraday', () {
+    test('intraday 1m', () async {
+      final String jsonStr = File('test_resources/intraday-1m.json').readAsStringSync();
+
+      final Intraday intraday = Intraday.fromJson(jsonAsMap(jsonStr));
+
+      print('intraday=$intraday');
+    });
   });
 }
